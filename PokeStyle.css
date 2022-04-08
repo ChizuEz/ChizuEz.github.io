@@ -1,0 +1,388 @@
+body {
+    background: rgb(237, 191, 83);
+    background: linear-gradient(
+      90deg,
+      rgb(237, 191, 83) 0%,
+      rgb(237, 191, 83) 54%,
+      rgb(237, 191, 83) 82%
+    );
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Oswald", sans-serif;
+  }
+  
+  h1 {
+    color: rgb(0, 0, 0);
+    font-family: "Press Start 2P";
+    padding: 10px;
+  }
+
+  #navs {
+
+    justify-content: end;
+  }
+
+  #divnav {
+    position: fixed;
+  }
+
+  #formulario {
+    font-family: "Press Start 2P";
+  }
+
+  #search {
+    font-family: "Press Start 2P";
+    font-size: 13px;
+  }
+
+  #buttonSearch {
+    font-family: "Press Start 2P";
+    font-size: 13px;
+  }
+
+  
+  .infoTitle  {
+    color: rgb(0, 0, 0);
+    font-family: "Press Start 2P";
+    font-size: 16px;
+    height: 15px;
+  }
+  
+  .poke-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    
+  }
+  
+  .card-container {
+    height: 700px;
+  }
+
+  #cardcontainer {
+      height: 620px;
+  }
+
+
+  .pokemon-block,
+  .pokemon-block-back {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(213, 24, 59);
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    border: inset #9a6565 3px;
+    height: 600px;
+  }
+
+  .pokemon-block {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(213, 24, 59);
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    border: inset #9a6565 3px;
+    height: 600px;
+  }
+
+
+  
+  .img-container {
+    background-image: url("./blob.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(0, 224, 246);
+    border-radius: 6px;
+    border: inset rgb(6, 153, 167) 4px;
+  }
+  
+  .pokemon-block p {
+    margin: 5px;
+  }
+  
+  .numPoke {
+    font-family: "Press Start 2P";
+  }
+
+  .name {
+    text-transform: capitalize;
+    font-weight: 200;
+    color: rgb(254, 254, 254);
+    font-size: 1.2rem;
+    background-color:rgb(255, 204, 2) ;
+    border-radius: 6px;
+    font-family: "Press Start 2P";
+    padding-top: 5px;
+    border: inset rgb(255, 204, 2)  4px;
+  }
+
+  .buttonZone {
+    margin: 15px;
+  }
+
+/* LOS ESTILOS PARA LOS BOTONES DE STATS, STORY E INFO  */
+
+
+  .infoStats {  
+    margin-left: 10px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: outset rgb(248, 187, 187) 6px;
+    transform: rotate(60deg);
+    background: radial-gradient(
+        circle farthest-corner at 40% 25%,
+        rgb(222, 255, 196) 9%,
+        rgb(134, 255, 34) 20%,
+        rgb(78, 170, 2) 62%,
+        rgb(40, 79, 9)  100%
+    );
+    cursor: pointer;
+}
+.infoStats:hover {
+    background: radial-gradient(
+        circle farthest-corner at 40% 25%,
+        rgb(255, 188, 242) 9%,
+        rgb(255, 44, 213) 20%,
+        rgb(145, 0, 116) 62%,
+        rgb(72, 10, 59) 100%
+    );
+}
+.infoStats:active {
+    background: radial-gradient(
+        circle farthest-corner at 40% 25%,
+        rgb(229, 255, 181) 9%,
+        rgb(204, 237, 124) 20%,
+        rgb(103, 165, 64) 62%,
+        rgb(66, 204, 40) 100%
+    );
+}
+ 
+.infoStory {  
+    margin-left: 10px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: outset rgb(248, 187, 187) 6px;
+    transform: rotate(60deg);
+    background: radial-gradient(
+        circle farthest-corner at 40% 25%,
+        rgb(255, 228, 177) 9%,
+        rgb(255, 179, 39) 20%,
+        rgb(133, 86, 0) 62%,
+        rgb(67, 48, 13)  100%
+    );
+    cursor: pointer;
+}
+.infoStory:hover {
+    background: radial-gradient(
+        circle farthest-corner at 40% 25%,
+        rgb(255, 188, 242) 9%,
+        rgb(255, 44, 213) 20%,
+        rgb(145, 0, 116) 62%,
+        rgb(72, 10, 59) 100%
+    );
+}
+.infoStory:active {
+    background: radial-gradient(
+        circle farthest-corner at 40% 25%,
+        rgb(229, 255, 181) 9%,
+        rgb(204, 237, 124) 20%,
+        rgb(103, 165, 64) 62%,
+        rgb(66, 204, 40) 100%
+    );
+}
+
+.infoType {  
+    margin-left: 10px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: outset rgb(248, 187, 187) 6px;
+    transform: rotate(60deg);
+    background: radial-gradient(
+        circle farthest-corner at 40% 25%,
+        rgb(196, 229, 255) 9%,
+        rgb(54, 168, 255) 20%,
+        rgb(0, 81, 143) 62%,
+        rgb(15, 46, 70) 100%
+    );
+    cursor: pointer;
+}
+.infoType:hover {
+    background: radial-gradient(
+        circle farthest-corner at 40% 25%,
+        rgb(255, 188, 242) 9%,
+        rgb(255, 44, 213) 20%,
+        rgb(145, 0, 116) 62%,
+        rgb(72, 10, 59) 100%
+    );
+}
+.infoType:active {
+    background: radial-gradient(
+        circle farthest-corner at 40% 25%,
+        rgb(229, 255, 181) 9%,
+        rgb(204, 237, 124) 20%,
+        rgb(103, 165, 64) 62%,
+        rgb(66, 204, 40) 100%
+    );
+}
+
+
+/* FIN DE LOS ESTILOS PARA LOS BOTONES DE STATS, STORY E INFO  */
+
+  .divider {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    margin: 0 20px;
+    margin-top: 12px;
+    align-items: center;
+    border: inset #460f0f 4px;
+    border-radius: 4px;
+    background: #460f0f;
+}
+
+  .divider > * {
+    border-radius: 4px;
+    border: solid #2d0d0d 2px;
+    transform: rotate(0deg);
+}
+
+  .gap:first-child {
+    border-radius: 5px 5px 0 0;
+}
+  .gap:last-child {
+    border-radius: 5px 5px 0 0;
+}
+  .gap {
+    background: linear-gradient(90deg, #460f0f 0, #891313 30%, #b31818 45%, #fd5555 65%, #b31818 95%);
+    border-top-color: #891313;
+    border-right-color: #b31818;
+    width: 10%;
+    margin-left: 97px;
+    height: 1850%;
+    transform: rotate(90deg);
+}
+
+  .infoZone {
+        background: linear-gradient(14deg, rgb(165, 205, 83) 60%, rgb(193, 217, 144) 65%);
+        padding: 5px;
+        border-radius: 3px;
+        font-family: "VT323";
+        border: inset #879a65 3px;
+        height: 300px;
+        margin-top: 10px;
+  }
+
+  .infoTitle {
+      margin-bottom: 15px;
+  }
+
+  .typeFormat {
+    text-transform: capitalize;
+    list-style: none;
+    font-family: "Press Start 2P";
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    background: linear-gradient(14deg, #afafaf 50%, #ffffff 80%, #afafaf 90%);
+    border-top: groove #757575 3px;
+  }
+
+  .abilityFormat {
+    text-transform: capitalize;
+    list-style: none;
+    font-family: "Press Start 2P";
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    background: linear-gradient(14deg, #ffe07a 50%, #f3ce53 80%, #ffcd27 90%);
+    border-top: groove #757575 3px;
+  }
+
+  .statFormat {
+    text-transform: capitalize;
+    list-style: none;
+    font-family: "Press Start 2P";
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    background: linear-gradient(25deg, rgb(137, 198, 245) 50%, rgb(62, 149, 216) 80%, rgb(56, 169, 255)90%);
+    border-top: groove #757575 3px;
+  }
+
+  .weightFormat {
+    text-transform: capitalize;
+    list-style: none;
+    font-family: "Press Start 2P";
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    background: linear-gradient(25deg, rgb(221, 152, 96) 50%, rgb(226, 130, 51)80%, rgb(228, 105, 5)90%);
+    border-top: groove #757575 3px;
+  }
+
+  .abilityFormat {
+    font-family: "Press Start 2P";
+    font-size: 10px;
+  }
+
+
+  
+  .pagination {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  
+  .card-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .card-container {
+    transform: rotateY(180deg);
+  }
+  
+  .pokemon-block,
+  .pokemon-block-back {
+    height: 550px;
+    backface-visibility: hidden;
+  }
+  
+  .pokemon-block-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0%;
+  }
+  
+  .stat-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+  }
+
+  .pagination {
+      display: none;
+  }
+  
